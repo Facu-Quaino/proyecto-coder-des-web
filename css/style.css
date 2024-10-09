@@ -156,24 +156,27 @@ a{
 }
 
 .containerBuzos{
-    height: 40vh;
+    height: 470px;
     background: url(../img/banner-buzos.png) no-repeat center; 
     background-size: cover;
     position: relative;
+    border: white 2px solid;
 }
 
 .containerCamisetas{
-    height: 40vh;
+    height: 470px;
     background: url(../img/banner-camisetas.png) no-repeat center; 
     background-size: cover;
     position: relative;
+    border: white 2px solid;
 }
 
 .containerPantalones{
-    height: 40vh;
+    height: 470px;
     background: url(../img/banner-pantalones.png) no-repeat center; 
     background-size: cover;
     position: relative;
+    border: white 2px solid;
 }
 
 .containerCategorias a div h2{
