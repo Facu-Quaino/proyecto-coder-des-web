@@ -16,6 +16,72 @@ a{
 
 /*! HEADER */
 
+/*? navbar logo*/
+
+.navbar-brand img{
+    width: 160px;
+    padding-right: 10px;
+}
+
+/*? /navbar logo*/
+
+/*? navbar background */
+
+.navbarBgColor{
+    background-color: black;
+}
+
+/*? /navbar background */
+
+/*? items del nav */
+
+.navLink{
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 20px;
+    color: white;
+}
+
+.navLink:hover{
+    color: lightgray;
+    transition: .4s;
+}
+
+.navLink:active{
+    color: white;
+    text-decoration: underline white;
+    transition: .4s;
+}
+
+/*? /items del nav */
+
+/*? boton buscar */
+.navbarBoton{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid 1px lightgray;
+    border-radius: 12px;
+    background-color: white;
+    color:black
+}
+
+.navbarBoton:hover{
+    background-color: lightgray;
+    border:solid 1px white;
+    transition: .4s;
+}
+
+.navbarBoton:active{
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    transition: 0.4s;
+}
+
+/*? /boton buscar */
+
 /*! /HEADER */
 
 
@@ -28,7 +94,11 @@ a{
     display:flex;
     justify-content: space-around;
     padding-top: 25px;
-    background-color: slateblue;
+    background-color: black;
+}
+
+.containerFooter div h4{
+    color: white;
 }
 
 /*? categorias */
@@ -48,15 +118,15 @@ a{
 
 .listaFooter div ul li a{
     font-size: 20px;
-    color: black;
+    color: white;
 }
 
 .listaFooter div ul li a:hover{
-    text-decoration: underline 1px black;
+    text-decoration: underline 1px white;
 }
 
 .listaFooter div ul li a:active{
-    color: yellow;
+    color: lightgray;
     text-decoration: none;
 }
 
@@ -218,7 +288,7 @@ a{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: darkgrey;
+    background-color: white;
 }
 
 .productosDestacados{
@@ -426,7 +496,7 @@ a{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: darkgrey;
+    background-color: white;
 }
 
 .productosBuzos{
