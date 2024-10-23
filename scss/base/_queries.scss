@@ -1,0 +1,41 @@
+@mixin primero{
+    @media screen and (max-width:1415px) {
+        @content;
+    }
+}
+
+@mixin segundo{
+    @media screen and (max-width:1279px) {
+        @content;
+    }
+}
+
+@mixin tercero{
+    @media screen and (max-width:1179px) {
+        @content;
+    }
+}
+
+@mixin cuarto{
+    @media screen and (max-width:1015px) {
+        @content;
+    }
+}
+
+@mixin quinto{
+    @media screen and (max-width:879px) {
+        @content;
+    }
+}
+
+@mixin sexto{
+    @media screen and (max-width:765px) {
+        @content;
+    }
+}
+
+@mixin septimo{
+    @media screen and (max-width:509px) {
+        @content;
+    }
+}

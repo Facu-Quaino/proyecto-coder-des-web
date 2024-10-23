@@ -1,0 +1,53 @@
+/* _FOOTER - COMPONENTS*/
+.containerFooter{
+
+    .listaFooter{
+        h4{
+            color: white;
+        }
+
+        div{
+            ul{
+                padding-left: 0;
+
+                li{
+                    list-style-type: none;
+
+                    a{
+                        font-size: 20px;
+                        color: white;
+                        &:hover{
+                            text-decoration: underline 1px white;
+                        }
+                        &:active{
+                            color: lightgray;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contactanos{
+        h4{
+            color:white
+        }
+
+        div{
+            a{
+                margin: 5px;
+
+                img{
+                    width: 50px;
+                    &:hover{
+                        width: 55px;
+                        transition: .4s;
+                        opacity: .6;
+                    }
+                }
+            }
+        }
+    }
+}
+/* /_FOOTER - COMPONENTS*/

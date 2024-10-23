@@ -1,0 +1,336 @@
+/*! CSS RESET - _GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+/*! /CSS RESET - _GENERALES*/
+
+@import "./queries";
+
+/*HEADER - _GENERALES*/
+.navbarBgColor{
+    background-color: black;
+}
+/* /HEADER - _GENERALES*/
+
+/*INDEX HERO - _GENERALES*/
+.imagenPrincipal{
+    position: relative;
+    background: url(../img/banner-hero.png) no-repeat center;
+    background-size: cover;
+    height: 95vh;
+    overflow: hidden;
+
+    .heroContainer{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        }
+    }
+/* /INDEX HERO - _GENERALES*/
+
+/*INDEX PRODUCTOS - _GENERALES*/
+.containerCategorias{
+    display: flex;
+    flex-direction: column;
+
+    a{
+        .containerBuzos{
+            height: 470px;
+            background: url(../img/banner-buzos.png) no-repeat center; 
+            background-size: cover;
+            position: relative;
+            border: white 2px solid;
+        }
+
+        &hover{
+            opacity: .6;
+            transition: .4s;
+        }
+
+    }
+
+    a{
+        .containerCamisetas{
+            height: 470px;
+            background: url(../img/banner-camisetas.png) no-repeat center; 
+            background-size: cover;
+            position: relative;
+            border: white 2px solid;
+        }
+        
+        &:hover{
+            opacity: .6;
+            transition: .4s;
+        }
+    }
+
+    a{
+        .containerPantalones{
+            height: 470px;
+            background: url(../img/banner-pantalones.png) no-repeat center; 
+            background-size: cover;
+            position: relative;
+            border: white 2px solid;
+        }
+
+        &:hover{
+            opacity: .6;
+            transition: .4s;
+        }
+    }
+}
+/*INDEX PRODUCTOS - _GENERALES*/
+
+/*INDEX DESTACADOS - _GENERALES*/
+.containerDestacados{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+
+    .productosDestacados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .tituloDestacados{
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .containerTarjetas{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+
+            @include sexto() {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 40px;
+            }
+
+            @include septimo() {
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 20%;
+                margin-left: 40px;
+                margin-right: 40px;
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 12px;
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-style: none;
+
+
+                }
+
+                @include primero() {
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+
+                @include segundo() {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+
+                @include tercero() {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 15px;
+                }
+
+                @include cuarto() {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    padding: 10px;
+                }
+
+                @include quinto() {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    padding: 6px;
+                }
+
+                @include sexto() {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 15px;
+                }
+
+                @include septimo() {
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 15px;
+                }
+            }
+        }
+    }
+}
+/* /INDEX DESTACADOS - _GENERALES*/
+
+/* FOOTER - _GENERALES*/
+.containerFooter{
+    display:flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    background-color: black;
+
+    .listaFooter{
+
+        div{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    .contactanos{
+        display: flex;
+        flex-direction: column;
+
+        div{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+/* /FOOTER - _GENERALES*/
+
+/*BUZOS - _GENERALES*/
+.containerBuzosNormal{
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+
+    .productosBuzos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .tituloBuzos{
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+
+        }
+
+        .containerTarjetasBuzos{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 40px;
+            justify-content: center;
+            margin-top: 25px;
+
+            @include sexto{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 40px;
+            }
+
+            @include septimo{
+                display: grid;
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex: 20%;
+                margin-left: 40px;
+                margin-right: 40px;
+                padding: 20px;
+                border: 1px solid black;
+                border-radius: 12px;
+
+                @include primero{
+                    margin-left: 30px;
+                    margin-right: 30px;
+                }
+
+                @include segundo{
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+
+                @include tercero{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 15px;
+                }
+
+                @include cuarto{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    padding: 10px;
+                }
+
+                @include quinto{
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    padding: 6px;
+                }
+
+                @include sexto{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 15px;
+                }
+
+                @include septimo{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    padding: 15px;
+                }
+
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    border-style: none;
+                }
+            }
+        }
+    }
+}
+/* /BUZOS - _GENERALES*/
