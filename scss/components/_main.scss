@@ -12,11 +12,39 @@
             margin-bottom: 40px;
             border-radius: 24px;
             opacity: .9;
+
+            @include primero{
+                width: 70vw;
+            }
+
+            @include segundo{
+                width: 75vw;
+            }
+
+            @include tercero{
+                width: 75vw;
+            }
+
+            @include cuarto{
+                width: 75vw;
+            }
+
+            @include quinto{
+                width: 80vw;
+            }
+
+            @include sexto{
+                width: 80vw;
+            }
+
+            @include septimo{
+                width: 85vw;
+            }
         }
 
         .botonPrincipal{
-            color: black;
-            background-color: white;
+            color: $negro;
+            background-color: $blanco;
             padding: 10px 24px;
             border-radius: 12px;
             transition: .4s;
@@ -26,8 +54,8 @@
             }
 
             &:active{
-                color: white;
-                background-color: black;
+                color: $blanco;
+                background-color: $negro;
                 opacity: 1;
             }
         }
@@ -51,15 +79,15 @@
             /*apariencia*/
                 font-size: 45px;
                 padding: 10px;
-                color: white;
-                background-color: black;
+                color: $blanco;
+                background-color: $negro;
                 border-radius: 12px;
                 transition: .4s;
                 opacity: 1;
                 
                 &:active{
-                    color: black;
-                    background-color: white;
+                    color: $negro;
+                    background-color: $blanco;
                     opacity: 1;
                 }
             }
@@ -79,15 +107,15 @@
                 /*apariencia*/
                 font-size: 45px;
                 padding: 10px;
-                color: white;
-                background-color: black;
+                color: $blanco;
+                background-color: $negro;
                 border-radius: 12px;
                 transition: .4s;
                 opacity: 1;
 
                 &:active{
-                    color: black;
-                    background-color: white;
+                    color: $negro;
+                    background-color: $blanco;
                     opacity: 1;
                 }
             }
@@ -107,15 +135,15 @@
                 /*apariencia*/
                 font-size: 45px;
                 padding: 10px;
-                color: white;
-                background-color: black;
+                color: $blanco;
+                background-color: $negro;
                 border-radius: 12px;
                 transition: .4s;
                 opacity: 1;
                 
                 &:active{
-                    color: black;
-                    background-color: white;
+                    color: $negro;
+                    background-color: $blanco;
                     opacity: 1;
                 }
             }
@@ -140,12 +168,12 @@
 
         .containerTarjetas{
 
-            div{
+            .tarjeta{
 
                 img{
                     display: block;
-                    margin-left: auto;
-                    margin-right: auto;
+                    margin-left: 15px;
+                    margin-right: 15px;
                     padding: 10px;
                     width: 200px;
                     height: 200px;
@@ -196,8 +224,8 @@
                     }
 
                     a{
-                        color: white;
-                        background-color: black;
+                        color: $blanco;
+                        background-color: $negro;
                         padding: 10px 24px;
                         border-radius: 12px;
                         transition: .4s;
@@ -207,8 +235,8 @@
                         }
 
                         &:active{
-                            color: black;
-                            background-color: white;
+                            color: $negro;
+                            background-color: $blanco;
                             opacity: 1;
                         }
                     }
@@ -235,12 +263,12 @@
 
         .containerTarjetasBuzos{
 
-            div{
+            .tarjeta{
 
                 img{
                     display: block;
-                    margin-left: auto;
-                    margin-right: auto;
+                    margin-left: 15px;
+                    margin-right: 15px;
                     padding: 10px;
                     width: 200px;
                     height: 200px;
@@ -291,8 +319,8 @@
                     }
 
                     a{
-                        color: white;
-                        background-color: black;
+                        color: $blanco;
+                        background-color: $negro;
                         padding: 10px 24px;
                         border-radius: 12px;
                         transition: .4s;
@@ -302,8 +330,8 @@
                         }
 
                         &:active{
-                            color: black;
-                            background-color: white;
+                            color: $negro;
+                            background-color: $blanco;
                             opacity: 1;
                         }
                     }
@@ -313,3 +341,31 @@
     }
 }
 /* /BUZOS - COMPONENTS*/
+
+/*PREGUNTAS - COMPONENTS*/
+.FAQ{
+    .tituloPreguntasFrecuentes{
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            font-size: 45px;
+        }
+    }
+
+    .contenedorPreguntas{
+
+        .pregunta{
+            h2{
+                font-weight: bold;
+                font-size: 30px;
+            }
+        }
+
+        .respuesta{
+            p{
+                font-size: 20px;
+            }
+        }
+    }
+}
+/* /PREGUNTAS - COMPONENTS*/

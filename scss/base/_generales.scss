@@ -14,7 +14,7 @@ a{
 
 /*HEADER - _GENERALES*/
 .navbarBgColor{
-    background-color: black;
+    background-color: $negro;
 }
 /* /HEADER - _GENERALES*/
 
@@ -49,7 +49,7 @@ a{
             background: url(../img/banner-buzos.png) no-repeat center; 
             background-size: cover;
             position: relative;
-            border: white 2px solid;
+            border: $blanco 2px solid;
         }
 
         &hover{
@@ -65,7 +65,7 @@ a{
             background: url(../img/banner-camisetas.png) no-repeat center; 
             background-size: cover;
             position: relative;
-            border: white 2px solid;
+            border: $blanco 2px solid;
         }
         
         &:hover{
@@ -80,7 +80,7 @@ a{
             background: url(../img/banner-pantalones.png) no-repeat center; 
             background-size: cover;
             position: relative;
-            border: white 2px solid;
+            border: $blanco 2px solid;
         }
 
         &:hover{
@@ -100,7 +100,7 @@ a{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: white;
+    background-color: $blanco;
 
     .productosDestacados{
         display: flex;
@@ -134,7 +134,7 @@ a{
                 row-gap: 40px;
             }
 
-            div{
+            .tarjeta{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -142,7 +142,7 @@ a{
                 margin-left: 40px;
                 margin-right: 40px;
                 padding: 20px;
-                border: 1px solid black;
+                border: 1px solid $negro;
                 border-radius: 12px;
 
                 div{
@@ -150,8 +150,6 @@ a{
                     flex-direction: column;
                     align-items: center;
                     border-style: none;
-
-
                 }
 
                 @include primero() {
@@ -204,7 +202,7 @@ a{
     display:flex;
     justify-content: space-around;
     padding-top: 25px;
-    background-color: black;
+    background-color: $negro;
 
     .listaFooter{
 
@@ -235,7 +233,7 @@ a{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    background-color: white;
+    background-color: $blanco;
 
     .productosBuzos{
         display: flex;
@@ -272,7 +270,7 @@ a{
                 row-gap: 40px;
             }
 
-            div{
+            .tarjeta{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -280,7 +278,7 @@ a{
                 margin-left: 40px;
                 margin-right: 40px;
                 padding: 20px;
-                border: 1px solid black;
+                border: 1px solid $negro;
                 border-radius: 12px;
 
                 @include primero{
@@ -334,3 +332,43 @@ a{
     }
 }
 /* /BUZOS - _GENERALES*/
+
+/*PREGUNTAS - _GENERALES*/
+.FAQ{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    .tituloPreguntasFrecuentes{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .contenedorPreguntas{
+        margin-top: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+        
+        @include quinto{
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+
+        @include sexto{
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        @include septimo{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .pregunta{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .respuesta{
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+    }
+}
+/* /PREGUNTAS - _GENERALES*/

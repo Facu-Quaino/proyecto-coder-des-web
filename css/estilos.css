@@ -99,7 +99,7 @@ a {
           display: grid;
           grid-template-columns: 1fr;
           row-gap: 40px; } }
-      .containerDestacados .productosDestacados .containerTarjetas div {
+      .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -109,41 +109,41 @@ a {
         padding: 20px;
         border: 1px solid black;
         border-radius: 12px; }
-        .containerDestacados .productosDestacados .containerTarjetas div div {
+        .containerDestacados .productosDestacados .containerTarjetas .tarjeta div {
           display: flex;
           flex-direction: column;
           align-items: center;
           border-style: none; }
         @media screen and (max-width: 1415px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 30px;
             margin-right: 30px; } }
         @media screen and (max-width: 1279px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 25px;
             margin-right: 25px; } }
         @media screen and (max-width: 1179px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 20px;
             margin-right: 20px;
             padding: 15px; } }
         @media screen and (max-width: 1015px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 15px;
             margin-right: 15px;
             padding: 10px; } }
         @media screen and (max-width: 879px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 10px;
             margin-right: 10px;
             padding: 6px; } }
         @media screen and (max-width: 765px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 20px;
             margin-right: 20px;
             padding: 15px; } }
         @media screen and (max-width: 509px) {
-          .containerDestacados .productosDestacados .containerTarjetas div {
+          .containerDestacados .productosDestacados .containerTarjetas .tarjeta {
             margin-left: 20px;
             margin-right: 20px;
             padding: 15px; } }
@@ -204,7 +204,7 @@ a {
           display: grid;
           grid-template-columns: 1fr;
           row-gap: 40px; } }
-      .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+      .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -215,64 +215,105 @@ a {
         border: 1px solid black;
         border-radius: 12px; }
         @media screen and (max-width: 1415px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 30px;
             margin-right: 30px; } }
         @media screen and (max-width: 1279px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 25px;
             margin-right: 25px; } }
         @media screen and (max-width: 1179px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 20px;
             margin-right: 20px;
             padding: 15px; } }
         @media screen and (max-width: 1015px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 15px;
             margin-right: 15px;
             padding: 10px; } }
         @media screen and (max-width: 879px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 10px;
             margin-right: 10px;
             padding: 6px; } }
         @media screen and (max-width: 765px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 20px;
             margin-right: 20px;
             padding: 15px; } }
         @media screen and (max-width: 509px) {
-          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div {
+          .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta {
             margin-left: 20px;
             margin-right: 20px;
             padding: 15px; } }
-        .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div div {
+        .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta div {
           display: flex;
           flex-direction: column;
           align-items: center;
           border-style: none; }
 
 /* /BUZOS - _GENERALES*/
+/*PREGUNTAS - _GENERALES*/
+.FAQ {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .FAQ .tituloPreguntasFrecuentes {
+    display: block;
+    margin-bottom: 30px; }
+  .FAQ .contenedorPreguntas {
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-right: 200px; }
+    @media screen and (max-width: 879px) {
+      .FAQ .contenedorPreguntas {
+        margin-left: 150px;
+        margin-right: 150px; } }
+    @media screen and (max-width: 765px) {
+      .FAQ .contenedorPreguntas {
+        margin-left: 100px;
+        margin-right: 100px; } }
+    @media screen and (max-width: 509px) {
+      .FAQ .contenedorPreguntas {
+        margin-left: 50px;
+        margin-right: 50px; } }
+    .FAQ .contenedorPreguntas .pregunta {
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .FAQ .contenedorPreguntas .respuesta {
+      margin-top: 10px;
+      margin-bottom: 40px; }
+
+/* /PREGUNTAS - _GENERALES*/
 /*HEADER - COMPONENTS*/
 nav div .navbar-brand img {
   width: 160px;
   padding-right: 10px; }
 
-nav div ul li .navLink {
+nav div .navbar-toggler .navbarTogglerIcon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url(../../img/hamburguer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; }
+
+nav div div ul li .navLink {
   padding-left: 12px;
   padding-right: 12px;
   font-size: 20px;
   color: white; }
-  nav div ul li .navLink:hover {
+  nav div div ul li .navLink:hover {
     color: lightgray;
     transition: .4s; }
-  nav div ul li .navLink:active {
+  nav div div ul li .navLink:active {
     color: white;
     text-decoration: underline white;
     transition: .4s; }
 
-nav div form .navbarBoton {
+nav div div form .navbarBoton {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
@@ -281,11 +322,11 @@ nav div form .navbarBoton {
   border-radius: 12px;
   background-color: white;
   color: black; }
-  nav div form .navbarBoton:hover {
+  nav div div form .navbarBoton:hover {
     background-color: lightgray;
     border: solid 1px white;
     transition: .4s; }
-  nav div form .navbarBoton:active {
+  nav div div form .navbarBoton:active {
     background-color: black;
     border: solid 1px white;
     color: white;
@@ -300,6 +341,27 @@ nav div form .navbarBoton {
   margin-bottom: 40px;
   border-radius: 24px;
   opacity: .9; }
+  @media screen and (max-width: 1415px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 70vw; } }
+  @media screen and (max-width: 1279px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 75vw; } }
+  @media screen and (max-width: 1179px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 75vw; } }
+  @media screen and (max-width: 1015px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 75vw; } }
+  @media screen and (max-width: 879px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 80vw; } }
+  @media screen and (max-width: 765px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 80vw; } }
+  @media screen and (max-width: 509px) {
+    .imagenPrincipal .heroContainer .logoPrincipal {
+      width: 85vw; } }
 
 .imagenPrincipal .heroContainer .botonPrincipal {
   color: black;
@@ -383,58 +445,58 @@ nav div form .navbarBoton {
   font-size: 35px;
   font-weight: 700; }
 
-.containerDestacados .productosDestacados .containerTarjetas div img {
+.containerDestacados .productosDestacados .containerTarjetas .tarjeta img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
   padding: 10px;
   width: 200px;
   height: 200px; }
   @media screen and (max-width: 1179px) {
-    .containerDestacados .productosDestacados .containerTarjetas div img {
+    .containerDestacados .productosDestacados .containerTarjetas .tarjeta img {
       padding: 7px;
       width: 175px;
       height: 175px; } }
   @media screen and (max-width: 1015px) {
-    .containerDestacados .productosDestacados .containerTarjetas div img {
+    .containerDestacados .productosDestacados .containerTarjetas .tarjeta img {
       padding: 5px;
       width: 165px;
       height: 165px; } }
   @media screen and (max-width: 879px) {
-    .containerDestacados .productosDestacados .containerTarjetas div img {
+    .containerDestacados .productosDestacados .containerTarjetas .tarjeta img {
       padding: 3px;
       width: 155px;
       height: 155px; } }
   @media screen and (max-width: 765px) {
-    .containerDestacados .productosDestacados .containerTarjetas div img {
+    .containerDestacados .productosDestacados .containerTarjetas .tarjeta img {
       padding: 7px;
       width: 175px;
       height: 175px; } }
   @media screen and (max-width: 509px) {
-    .containerDestacados .productosDestacados .containerTarjetas div img {
+    .containerDestacados .productosDestacados .containerTarjetas .tarjeta img {
       padding: 7px;
       width: 175px;
       height: 175px; } }
 
-.containerDestacados .productosDestacados .containerTarjetas div div h3 {
+.containerDestacados .productosDestacados .containerTarjetas .tarjeta div h3 {
   text-align: center;
   font-size: 20px;
   font-weight: 700; }
 
-.containerDestacados .productosDestacados .containerTarjetas div div p {
+.containerDestacados .productosDestacados .containerTarjetas .tarjeta div p {
   text-align: center;
   font-size: 15px;
   font-weight: 500; }
 
-.containerDestacados .productosDestacados .containerTarjetas div div a {
+.containerDestacados .productosDestacados .containerTarjetas .tarjeta div a {
   color: white;
   background-color: black;
   padding: 10px 24px;
   border-radius: 12px;
   transition: .4s; }
-  .containerDestacados .productosDestacados .containerTarjetas div div a:hover {
+  .containerDestacados .productosDestacados .containerTarjetas .tarjeta div a:hover {
     opacity: .6; }
-  .containerDestacados .productosDestacados .containerTarjetas div div a:active {
+  .containerDestacados .productosDestacados .containerTarjetas .tarjeta div a:active {
     color: black;
     background-color: white;
     opacity: 1; }
@@ -446,63 +508,77 @@ nav div form .navbarBoton {
   font-size: 35px;
   font-weight: 700; }
 
-.containerBuzosNormal .productosBuzos .containerTarjetasBuzos div img {
+.containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 15px;
+  margin-right: 15px;
   padding: 10px;
   width: 200px;
   height: 200px; }
   @media screen and (max-width: 1179px) {
-    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div img {
+    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta img {
       padding: 7px;
       width: 175px;
       height: 175px; } }
   @media screen and (max-width: 1015px) {
-    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div img {
+    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta img {
       padding: 5px;
       width: 165px;
       height: 165px; } }
   @media screen and (max-width: 879px) {
-    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div img {
+    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta img {
       padding: 3px;
       width: 155px;
       height: 155px; } }
   @media screen and (max-width: 765px) {
-    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div img {
+    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta img {
       padding: 7px;
       width: 175px;
       height: 175px; } }
   @media screen and (max-width: 509px) {
-    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div img {
+    .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta img {
       padding: 7px;
       width: 175px;
       height: 175px; } }
 
-.containerBuzosNormal .productosBuzos .containerTarjetasBuzos div div h3 {
+.containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta div h3 {
   text-align: center;
   font-size: 20px;
   font-weight: 700; }
 
-.containerBuzosNormal .productosBuzos .containerTarjetasBuzos div div p {
+.containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta div p {
   text-align: center;
   font-size: 15px;
   font-weight: 500; }
 
-.containerBuzosNormal .productosBuzos .containerTarjetasBuzos div div a {
+.containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta div a {
   color: white;
   background-color: black;
   padding: 10px 24px;
   border-radius: 12px;
   transition: .4s; }
-  .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div div a:hover {
+  .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta div a:hover {
     opacity: .6; }
-  .containerBuzosNormal .productosBuzos .containerTarjetasBuzos div div a:active {
+  .containerBuzosNormal .productosBuzos .containerTarjetasBuzos .tarjeta div a:active {
     color: black;
     background-color: white;
     opacity: 1; }
 
 /* /BUZOS - COMPONENTS*/
+/*PREGUNTAS - COMPONENTS*/
+.FAQ .tituloPreguntasFrecuentes h1 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 45px; }
+
+.FAQ .contenedorPreguntas .pregunta h2 {
+  font-weight: bold;
+  font-size: 30px; }
+
+.FAQ .contenedorPreguntas .respuesta p {
+  font-size: 20px; }
+
+/* /PREGUNTAS - COMPONENTS*/
 /* _FOOTER - COMPONENTS*/
 .containerFooter .listaFooter h4 {
   color: white; }

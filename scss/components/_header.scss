@@ -8,53 +8,67 @@ nav{
                 padding-right: 10px;
             }
         }
-    }
 
-    div{
-        ul{
-            li{
-                .navLink{
-                    padding-left: 12px;
-                    padding-right: 12px;
-                    font-size: 20px;
-                    color: white;
+        .navbar-toggler{
 
-                    &:hover{
-                        color: lightgray;
-                        transition: .4s;
-                    }
-
-                    &:active{
-                        color: white;
-                        text-decoration: underline white;
-                        transition: .4s;
-                    }
-                }
+            .navbarTogglerIcon{
+                display: inline-block;
+                width: 1.5em;
+                height: 1.5em;
+                vertical-align: middle;
+                background-image: url(../../img/hamburguer.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100%;
             }
         }
 
-        form{
-            .navbarBoton{
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                border: solid 1px lightgray;
-                border-radius: 12px;
-                background-color: white;
-                color:black;
-
-                &:hover{
-                    background-color: lightgray;
-                    border:solid 1px white;
-                    transition: .4s;
+        div{
+            ul{
+                li{
+                    .navLink{
+                        padding-left: 12px;
+                        padding-right: 12px;
+                        font-size: 20px;
+                        color: $blanco;
+    
+                        &:hover{
+                            color: $gris;
+                            transition: .4s;
+                        }
+    
+                        &:active{
+                            color: $blanco;
+                            text-decoration: underline $blanco;
+                            transition: .4s;
+                        }
+                    }
                 }
-
-                &:active{
-                    background-color: black;
-                    border: solid 1px white;
-                    color: white;
-                    transition: 0.4s;
+            }
+    
+            form{
+                .navbarBoton{
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border: solid 1px $gris;
+                    border-radius: 12px;
+                    background-color: $blanco;
+                    color:$negro;
+    
+                    &:hover{
+                        background-color: $gris;
+                        border:solid 1px $blanco;
+                        transition: .4s;
+                    }
+    
+                    &:active{
+                        background-color: $negro;
+                        border: solid 1px $blanco;
+                        color: $blanco;
+                        transition: 0.4s;
+                    }
                 }
             }
         }
